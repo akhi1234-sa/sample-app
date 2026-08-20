@@ -17,4 +17,3 @@ spec:
         image: us-central1-docker.pkg.dev/qwiklabs-gcp-02-ea79d2368929/my-repository/hello-cloudbuild-dev:v1.0
         ports:
         - containerPort: 8080
-
