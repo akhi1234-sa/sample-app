@@ -14,14 +14,14 @@ steps:
     args:
       - 'build'
       - '-t'
-      - 'europe-west1-docker.pkg.dev/qwiklabs-gcp-02-ea79d2368929/my-repository-eu/hello-cloudbuild-dev:v1.0'
+      - 'europe-west1-docker.pkg.dev/qwiklabs-gcp-02-ea79d2368929/my-repository-eu/hello-cloudbuild-dev:v2.0'
       - '.'
 
   # Step 3: Push the Docker Image
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - 'europe-west1-docker.pkg.dev/qwiklabs-gcp-02-ea79d2368929/my-repository-eu/hello-cloudbuild-dev:v1.0'
+      - 'europe-west1-docker.pkg.dev/qwiklabs-gcp-02-ea79d2368929/my-repository-eu/hello-cloudbuild-dev:v2.0'
 
   # Step 4: Deploy to DEV Namespace
   - name: 'gcr.io/cloud-builders/kubectl'
